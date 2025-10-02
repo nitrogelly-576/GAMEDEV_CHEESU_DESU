@@ -1,0 +1,40 @@
+{
+  "$GMProject":"v1",
+  "%Name":"DialogueSystem_WithEffects_Template",
+  "AudioGroups":[
+    {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
+  ],
+  "configs":{
+    "children":[],
+    "name":"Default",
+  },
+  "defaultScriptType":1,
+  "Folders":[
+    {"$GMFolder":"","%Name":"[ TEXTBOX SYSTEM ]","folderPath":"folders/[ TEXTBOX SYSTEM ].yy","name":"[ TEXTBOX SYSTEM ]","resourceType":"GMFolder","resourceVersion":"2.0",},
+  ],
+  "ForcedPrefabProjectReferences":[],
+  "IncludedFiles":[],
+  "isEcma":false,
+  "LibraryEmitters":[],
+  "MetaData":{
+    "IDEVersion":"2024.13.1.193",
+  },
+  "name":"DialogueSystem_WithEffects_Template",
+  "resources":[
+    {"id":{"name":"f_arial","path":"fonts/f_arial/f_arial.yy",},},
+    {"id":{"name":"[ TEMPLATE MANUAL ]","path":"notes/[ TEMPLATE MANUAL ]/[ TEMPLATE MANUAL ].yy",},},
+    {"id":{"name":"obj_settings","path":"objects/obj_settings/obj_settings.yy",},},
+    {"id":{"name":"obj_txtbox","path":"objects/obj_txtbox/obj_txtbox.yy",},},
+    {"id":{"name":"rm_textroom","path":"rooms/rm_textroom/rm_textroom.yy",},},
+    {"id":{"name":"spr_txtbox","path":"sprites/spr_txtbox/spr_txtbox.yy",},},
+  ],
+  "resourceType":"GMProject",
+  "resourceVersion":"2.0",
+  "RoomOrderNodes":[
+    {"roomId":{"name":"rm_textroom","path":"rooms/rm_textroom/rm_textroom.yy",},},
+  ],
+  "templateType":"game",
+  "TextureGroups":[
+    {"$GMTextureGroup":"","%Name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","customOptions":"","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"name":"Default","resourceType":"GMTextureGroup","resourceVersion":"2.0","targets":-1,},
+  ],
+}

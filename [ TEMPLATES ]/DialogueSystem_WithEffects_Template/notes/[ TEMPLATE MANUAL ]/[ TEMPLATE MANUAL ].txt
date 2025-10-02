@@ -1,0 +1,7 @@
+
+|	DESCRIPTIONS & PURPOSES of certain OBJECTS	|
+
+	[obj_settings]
+		- [Persistant] can/will move throughout every room/part of the game
+		- Best to place in starting menu
+		- Is used for settings within the game
