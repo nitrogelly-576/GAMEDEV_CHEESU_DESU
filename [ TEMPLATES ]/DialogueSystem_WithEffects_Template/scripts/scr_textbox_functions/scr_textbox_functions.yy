@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_textbox_functions",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_textbox_functions",
+  "parent":{
+    "name":"DialogueSystem_WithEffects_Template",
+    "path":"DialogueSystem_WithEffects_Template.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

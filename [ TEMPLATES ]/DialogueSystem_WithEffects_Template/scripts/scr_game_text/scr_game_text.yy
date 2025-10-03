@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_game_text",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_game_text",
+  "parent":{
+    "name":"DialogueSystem_WithEffects_Template",
+    "path":"DialogueSystem_WithEffects_Template.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

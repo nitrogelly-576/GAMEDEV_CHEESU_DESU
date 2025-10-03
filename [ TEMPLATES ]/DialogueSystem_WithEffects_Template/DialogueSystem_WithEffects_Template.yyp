@@ -23,9 +23,13 @@
   "resources":[
     {"id":{"name":"f_arial","path":"fonts/f_arial/f_arial.yy",},},
     {"id":{"name":"[ TEMPLATE MANUAL ]","path":"notes/[ TEMPLATE MANUAL ]/[ TEMPLATE MANUAL ].yy",},},
+    {"id":{"name":"obj_interactable","path":"objects/obj_interactable/obj_interactable.yy",},},
     {"id":{"name":"obj_settings","path":"objects/obj_settings/obj_settings.yy",},},
     {"id":{"name":"obj_txtbox","path":"objects/obj_txtbox/obj_txtbox.yy",},},
     {"id":{"name":"rm_textroom","path":"rooms/rm_textroom/rm_textroom.yy",},},
+    {"id":{"name":"scr_game_text","path":"scripts/scr_game_text/scr_game_text.yy",},},
+    {"id":{"name":"scr_textbox_functions","path":"scripts/scr_textbox_functions/scr_textbox_functions.yy",},},
+    {"id":{"name":"spr_speakblock","path":"sprites/spr_speakblock/spr_speakblock.yy",},},
     {"id":{"name":"spr_txtbox","path":"sprites/spr_txtbox/spr_txtbox.yy",},},
   ],
   "resourceType":"GMProject",
