@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 using TMPro;
@@ -8,6 +9,7 @@ public class DialogueUI : MonoBehaviour
 {
     [SerializeField] private TMP_Text _speakerText;
     [SerializeField] private TMP_Text _dialogueText;
+    [SerializeField] private Image _portraitImage;
 
     [SerializeField] private float _typingSpeed = 0.03f;
 
@@ -16,9 +18,19 @@ public class DialogueUI : MonoBehaviour
     private string _fullText;
     private bool _isTyping;
 
-    public void SetLine(string speaker, string dialogue)
+    public void SetLine(
+    CharacterData character,
+    string dialogue)
     {
-        _speakerText.text = speaker;
+        _speakerText.text = character.CharacterName;
+
+        _portraitImage.sprite = character.Portrait;
+
+        _portraitImage.SetNativeSize();
+
+        _portraitImage.rectTransform.anchoredPosition = character.PortraitOffset;
+
+        _portraitImage.rectTransform.localScale = Vector3.one * character.PortraitScale;
 
         if (_typingCoroutine != null)
         {

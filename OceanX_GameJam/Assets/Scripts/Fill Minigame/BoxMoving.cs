@@ -5,19 +5,16 @@ using UnityEngine;
 public class BoxMoving : MonoBehaviour
 {
 
-    [SerializeField] public float Speed = 30.0f;
-
-    [SerializeField] public int uturn = 45;
+    [SerializeField] private float _speed = 30f;
+    [SerializeField] private int _uTurnLimit = 100;
 
     private Vector3 movement;
 
-    // Start is called before the first frame update
     void Start()
     {
-        movement = new Vector3(Speed, 0, 0);
+        movement = new Vector3(_speed, 0, 0);
     }
 
-    // Update is called once per frame
     void Update()
     {
         this.gameObject.transform.Translate(movement * Time.deltaTime * 5);
@@ -26,14 +23,25 @@ public class BoxMoving : MonoBehaviour
 
     private void LeftRight()
     {
-        if (this.gameObject.transform.localPosition.x > uturn)
+        if (this.gameObject.transform.localPosition.x > _uTurnLimit)
         {
-            movement = new Vector3(-Speed, 0, 0);
+            movement = new Vector3(-_speed, 0, 0);
         }
-        if (this.gameObject.transform.localPosition.x < -uturn)
+        if (this.gameObject.transform.localPosition.x < -_uTurnLimit)
         {
-            movement = new Vector3(Speed, 0, 0);
+            movement = new Vector3(_speed, 0, 0);
         }
     }
 
+    public void AddSpeed(float amount)
+    {
+        _speed += amount;
+
+        movement = new Vector3(Mathf.Sign(movement.x) * _speed, 0, 0);
+    }
+
+    public float GetBoxSpeed()
+    {
+        return _speed;
+    }
 }

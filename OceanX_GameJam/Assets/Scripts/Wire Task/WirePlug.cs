@@ -47,7 +47,7 @@ public class WirePlug : MonoBehaviour,
         float distance =
             Vector2.Distance(_rectTransform.position, _rightSocket.RectTransform.position);
 
-        if (distance < 20f)
+        if (distance < 50f)
         {
             SnapToSocket();
 

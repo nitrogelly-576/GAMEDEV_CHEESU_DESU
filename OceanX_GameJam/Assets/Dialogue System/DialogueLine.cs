@@ -7,6 +7,8 @@ using System;
 [Serializable]
 public class DialogueLine
 {
-    public string Speaker;
+    public CharacterData Character;
+
+    [TextArea]
     public string Text;
 }

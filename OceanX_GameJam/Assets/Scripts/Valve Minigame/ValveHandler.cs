@@ -1,52 +1,35 @@
-using System.Collections;
-using System.Collections.Generic;
+using UnityEditor.PackageManager.UI;
 using UnityEngine;
 
 public class ValveHandler : MonoBehaviour
 {
+    [SerializeField] private ValveMinigame[] spinners;
 
-    [SerializeField] ValveMinigame[] spinners;
-    [SerializeField] public GameObject light;
+    [SerializeField] private GameObject _indicatorLight;
 
-    public bool winCon;
-
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        winCon = false;
+        _indicatorLight.SetActive(false);
     }
 
-    private bool checkAll()
+    private void Update()
     {
+        if (CheckAll())
+        { 
+            GameManager.Instance.CompleteValveTask();
+        }
+    }
 
-        foreach (ValveMinigame thisOne in spinners)
+    private bool CheckAll()
+    {
+        foreach (ValveMinigame valve in spinners)
         {
-
-            if(thisOne.keepSpin == true)
+            if (valve.keepSpin)
             {
-
                 return false;
-
             }
-
         }
 
         return true;
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-        light.SetActive(winCon);
-
-        if (checkAll())
-        {
-
-            winCon = true;
-
-        }
-
     }
 }

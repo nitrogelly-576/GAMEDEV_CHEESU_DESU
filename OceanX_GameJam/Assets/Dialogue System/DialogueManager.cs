@@ -14,6 +14,8 @@ public class DialogueManager : MonoBehaviour
 
     private void Start()
     {
+        //Debug.Log("Dialogue Started");
+
         _dialoguePanel.SetActive(true);
         ShowCurrentLine();
     }
@@ -38,8 +40,10 @@ public class DialogueManager : MonoBehaviour
         DialogueLine line =
             _dialogueLines[_currentLine];
 
+        Debug.Log(line.Character.CharacterName);
+
         _dialogueUI.SetLine(
-            line.Speaker,
+            line.Character,
             line.Text
         );
     }

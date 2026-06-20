@@ -53,7 +53,7 @@ public class TaskWiresManager : MonoBehaviour
 
         if (_connectedWires >= 4)
         {
-            GameManager.Instance.CompleteTask();
+            GameManager.Instance.CompleteWireTask();
         }
     }
 }
