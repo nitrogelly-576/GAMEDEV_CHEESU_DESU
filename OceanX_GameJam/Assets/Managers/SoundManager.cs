@@ -16,6 +16,7 @@ public class SoundManager : Singleton<SoundManager>
     [SerializeField] private AudioClip _taskComplete;
     [SerializeField] private AudioClip _wireTape;
     [SerializeField] private AudioClip _OxygenFill;
+    [SerializeField] private AudioClip _OxygenEnd;
 
     public void PlayGameMusic()
     {
@@ -37,5 +38,10 @@ public class SoundManager : Singleton<SoundManager>
     public void PlayOxygenFill()
     {
         _sfxSource.PlayOneShot(_OxygenFill);
+    }
+
+    public void PlayOxygenEnd()
+    {
+        _sfxSource.PlayOneShot(_OxygenEnd);
     }
 }

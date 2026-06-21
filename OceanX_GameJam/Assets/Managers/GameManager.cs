@@ -64,6 +64,7 @@ public class GameManager : Singleton<GameManager>
             return;
 
         SoundManager.Instance.PlayTaskComplete();
+        SoundManager.Instance.PlayOxygenEnd();
 
         _fillTaskComplete = true;
 
