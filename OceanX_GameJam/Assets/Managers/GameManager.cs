@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class GameManager : Singleton<GameManager>
 {
@@ -16,13 +17,44 @@ public class GameManager : Singleton<GameManager>
 
     private bool _taskOpen;
 
+
+    [SerializeField] public TMP_Text timer;
+    [SerializeField] public float timeCount;
+    public bool startTime;
+
     private void Start()
     {
         SoundManager.Instance.PlayGameMusic();
+        startTime = false;
+    }
+
+
+    private void countDown()
+    {
+
+        timeCount -= Time.deltaTime;
+        int minutes = Mathf.FloorToInt(timeCount / 60);
+        int seconds = Mathf.FloorToInt(timeCount % 60);
+
+        timer.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+
+    }
+
+    void Update()
+    {
+
+        if(startTime)
+        {
+
+            countDown();
+
+        }
+
     }
 
     public void OpenWireTask()
     {
+
         if (_wireTaskComplete)
             return;
 
@@ -30,6 +62,7 @@ public class GameManager : Singleton<GameManager>
         _taskOpen = true;
 
         Debug.Log("Wire Task Open!");
+        startTime = true;
     }
 
     public void CompleteWireTask()
@@ -56,6 +89,7 @@ public class GameManager : Singleton<GameManager>
         _taskOpen = true;
 
         Debug.Log("Wire Task Open!");
+        startTime = true;
     }
 
     public void CompleteFillTask()
@@ -82,6 +116,7 @@ public class GameManager : Singleton<GameManager>
         _taskOpen = true;
 
         Debug.Log("Wire Task Open!");
+        startTime = true;
     }
 
     public void CompleteValveTask()
