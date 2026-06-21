@@ -81,6 +81,8 @@ public class GameManager : Singleton<GameManager>
 
         _valveTaskComplete = true;
 
+        ValveMinigame.Instance.TurnOnSpin();
+
         _valveTaskPanel.SetActive(false);
         _taskOpen = false;
 

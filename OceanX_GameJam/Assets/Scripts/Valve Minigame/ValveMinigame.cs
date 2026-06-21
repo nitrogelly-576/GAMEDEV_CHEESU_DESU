@@ -4,7 +4,7 @@ using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class ValveMinigame : MonoBehaviour, IPointerClickHandler
+public class ValveMinigame : Singleton<ValveMinigame>, IPointerClickHandler
 {
 
     [SerializeField] public GameObject back;
@@ -45,7 +45,10 @@ public class ValveMinigame : MonoBehaviour, IPointerClickHandler
             keepSpin = false;
 
         }
-    
     }
 
+    public void TurnOnSpin()
+    {
+        keepSpin = true;
+    }
 }

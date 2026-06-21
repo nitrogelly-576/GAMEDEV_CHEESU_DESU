@@ -5,12 +5,7 @@ public class ValveHandler : MonoBehaviour
 {
     [SerializeField] private ValveMinigame[] spinners;
 
-    [SerializeField] private GameObject _indicatorLight;
 
-    private void Start()
-    {
-        _indicatorLight.SetActive(false);
-    }
 
     private void Update()
     {

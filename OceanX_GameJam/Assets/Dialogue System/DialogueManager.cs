@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DialogueManager : MonoBehaviour
+public class DialogueManager : Singleton<DialogueManager>
 {
     [SerializeField] private GameObject _dialoguePanel;
     [SerializeField] private DialogueUI _dialogueUI;
@@ -11,6 +11,11 @@ public class DialogueManager : MonoBehaviour
         new List<DialogueLine>();
 
     private int _currentLine = 0;
+
+    private void Awake()
+    {
+        Debug.Log(gameObject.name);
+    }
 
     private void Start()
     {
@@ -33,6 +38,17 @@ public class DialogueManager : MonoBehaviour
                 NextLine();
             }
         }
+    }
+
+    public void StartDialogue(List<DialogueLine> dialogueLines)
+    {
+        _dialogueLines = dialogueLines;
+
+        _currentLine = 0;
+
+        _dialoguePanel.SetActive(true);
+
+        ShowCurrentLine();
     }
 
     private void ShowCurrentLine()
