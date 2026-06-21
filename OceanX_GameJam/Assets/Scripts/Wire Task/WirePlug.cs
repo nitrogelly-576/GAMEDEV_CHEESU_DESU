@@ -53,6 +53,8 @@ public class WirePlug : MonoBehaviour,
 
             _isConnected = true;
 
+            SoundManager.Instance.PlaywireTape();
+
             _taskWiresManager.ConnectWire();
 
             Debug.Log("Connected!");

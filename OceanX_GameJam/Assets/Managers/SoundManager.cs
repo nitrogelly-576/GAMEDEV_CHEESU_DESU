@@ -13,7 +13,9 @@ public class SoundManager : Singleton<SoundManager>
     [SerializeField] private AudioClip _gameMusic;
 
     [Header("Game SFX")]
-    [SerializeField] private AudioClip _enemyDeathSFX;
+    [SerializeField] private AudioClip _taskComplete;
+    [SerializeField] private AudioClip _wireTape;
+    [SerializeField] private AudioClip _OxygenFill;
 
     public void PlayGameMusic()
     {
@@ -22,8 +24,18 @@ public class SoundManager : Singleton<SoundManager>
         _musicSource.Play();
     }
 
-    public void PlayEnemyDeath()
+    public void PlayTaskComplete()
     {
-        _sfxSource.PlayOneShot(_enemyDeathSFX);
+        _sfxSource.PlayOneShot(_taskComplete);
+    }
+
+    public void PlaywireTape()
+    {
+        _sfxSource.PlayOneShot(_wireTape);
+    }
+
+    public void PlayOxygenFill()
+    {
+        _sfxSource.PlayOneShot(_OxygenFill);
     }
 }

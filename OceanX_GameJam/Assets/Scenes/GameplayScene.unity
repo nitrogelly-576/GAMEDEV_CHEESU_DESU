@@ -331,7 +331,47 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dialogueManager: {fileID: 1737419913}
-  _dialogue: []
+  _dialogue:
+  - Character:
+      CharacterName: ???
+      Portrait: {fileID: 21300000, guid: 90457a036e141744ea4cb1ce6bdbbf6b, type: 3}
+      PortraitOffset: {x: -200, y: 200}
+      PortraitScale: 5
+    Text: "Who is this?! You\u2019re not supposed to be here!"
+  - Character:
+      CharacterName: ???
+      Portrait: {fileID: 21300000, guid: 90457a036e141744ea4cb1ce6bdbbf6b, type: 3}
+      PortraitOffset: {x: -200, y: 200}
+      PortraitScale: 5
+    Text: "Wait\u2026"
+  - Character:
+      CharacterName: ???
+      Portrait: {fileID: 21300000, guid: 90457a036e141744ea4cb1ce6bdbbf6b, type: 3}
+      PortraitOffset: {x: -200, y: 200}
+      PortraitScale: 5
+    Text: "Right\u2026 you must be the new Captain Thomas had told me about. I believe
+      I should introduce myself."
+  - Character:
+      CharacterName: Harold
+      Portrait: {fileID: 21300000, guid: 90457a036e141744ea4cb1ce6bdbbf6b, type: 3}
+      PortraitOffset: {x: -200, y: 200}
+      PortraitScale: 5
+    Text: "The name\u2019s Harold and from what Thomas told you about me, yes I\u2019m
+      the one who mostly maintains the Ocean Why ."
+  - Character:
+      CharacterName: Harold
+      Portrait: {fileID: 21300000, guid: 90457a036e141744ea4cb1ce6bdbbf6b, type: 3}
+      PortraitOffset: {x: -200, y: 200}
+      PortraitScale: 5
+    Text: "I\u2019ll be guiding you through one of tasks for the day since I got
+      my hands tied at the moment working maintaining the vessel in another area."
+  - Character:
+      CharacterName: Harold
+      Portrait: {fileID: 21300000, guid: 90457a036e141744ea4cb1ce6bdbbf6b, type: 3}
+      PortraitOffset: {x: -200, y: 200}
+      PortraitScale: 5
+    Text: "Notice the Reactor Core on the side of the Deck? Head over there, I will
+      show you how to work on it.\r"
 --- !u!135 &30187186
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -964,7 +1004,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1060,10 +1100,10 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1154,7 +1194,7 @@ Transform:
   m_GameObject: {fileID: 315263231}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.3175783, y: -1.231163, z: -6.2600756}
+  m_LocalPosition: {x: -2.3175783, y: 0.23, z: -6.2600756}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1174,8 +1214,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _musicSource: {fileID: 315263233}
   _sfxSource: {fileID: 315263233}
-  _gameMusic: {fileID: 0}
-  _enemyDeathSFX: {fileID: 0}
+  _gameMusic: {fileID: 8300000, guid: 7b1a9aa7fe9ac1045b18914631a9fc53, type: 3}
+  _taskComplete: {fileID: 8300000, guid: fe8e76a750b3b2b4bac93a8193deded5, type: 3}
+  _wireTape: {fileID: 8300000, guid: a63e5311fa452c84ca155e70e4cad2eb, type: 3}
+  _OxygenFill: {fileID: 8300000, guid: ea1a87ddb64e4eb44b8a415abe8b0cc5, type: 3}
 --- !u!1 &344866109
 GameObject:
   m_ObjectHideFlags: 0
@@ -3488,7 +3530,62 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dialogueManager: {fileID: 1737419913}
-  _dialogue: []
+  _dialogue:
+  - Character:
+      CharacterName: ???
+      Portrait: {fileID: 21300000, guid: c434818d4eae24749855d034a4bbeddb, type: 3}
+      PortraitOffset: {x: -400, y: 0}
+      PortraitScale: 10
+    Text: 'Ah, you must be the captain of the research vessel, Ocean Why. '
+  - Character:
+      CharacterName: Thamsin
+      Portrait: {fileID: 21300000, guid: c434818d4eae24749855d034a4bbeddb, type: 3}
+      PortraitOffset: {x: -400, y: 0}
+      PortraitScale: 10
+    Text: "I\u2019m Thamsin, the researcher whom you\u2019ll be assisting for the
+      day."
+  - Character:
+      CharacterName: Thamsin
+      Portrait: {fileID: 21300000, guid: c434818d4eae24749855d034a4bbeddb, type: 3}
+      PortraitOffset: {x: -400, y: 0}
+      PortraitScale: 10
+    Text: "I see that you\u2019re familiar with two of your compatriots, so I won\u2019t
+      bother you with their introductions.  "
+  - Character:
+      CharacterName: Thamsin
+      Portrait: {fileID: 21300000, guid: c434818d4eae24749855d034a4bbeddb, type: 3}
+      PortraitOffset: {x: -400, y: 0}
+      PortraitScale: 10
+    Text: "Anyways, we\u2019re near an area of interest where a new specimen is reportedly
+      sighted."
+  - Character:
+      CharacterName: Thamsin
+      Portrait: {fileID: 21300000, guid: c434818d4eae24749855d034a4bbeddb, type: 3}
+      PortraitOffset: {x: -400, y: 0}
+      PortraitScale: 10
+    Text: "However, there are issues with the oxygen canisters. They\u2019ve appeared
+      to be empty at the moment. "
+  - Character:
+      CharacterName: Thamsin
+      Portrait: {fileID: 21300000, guid: c434818d4eae24749855d034a4bbeddb, type: 3}
+      PortraitOffset: {x: -400, y: 0}
+      PortraitScale: 10
+    Text: "So you\u2019ll be filling them. Don\u2019t worry, I\u2019ll guide you
+      through the process."
+  - Character:
+      CharacterName: Thamsin
+      Portrait: {fileID: 21300000, guid: c434818d4eae24749855d034a4bbeddb, type: 3}
+      PortraitOffset: {x: -400, y: 0}
+      PortraitScale: 10
+    Text: "Also, I have been receiving reports of a specific electrical breaker not
+      functioning and the reactor being unstable.\r"
+  - Character:
+      CharacterName: Thamsin
+      Portrait: {fileID: 21300000, guid: c434818d4eae24749855d034a4bbeddb, type: 3}
+      PortraitOffset: {x: -400, y: 0}
+      PortraitScale: 10
+    Text: "Please quickly address those two issues before we proceed to the vessel's
+      reactor.\r\r"
 --- !u!135 &1476954645
 SphereCollider:
   m_ObjectHideFlags: 0

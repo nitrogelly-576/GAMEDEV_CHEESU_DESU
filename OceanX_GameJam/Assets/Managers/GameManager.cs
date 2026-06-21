@@ -16,6 +16,11 @@ public class GameManager : Singleton<GameManager>
 
     private bool _taskOpen;
 
+    private void Start()
+    {
+        SoundManager.Instance.PlayGameMusic();
+    }
+
     public void OpenWireTask()
     {
         if (_wireTaskComplete)
@@ -31,6 +36,8 @@ public class GameManager : Singleton<GameManager>
     {
         if (_wireTaskComplete)
             return;
+
+        SoundManager.Instance.PlayTaskComplete();
 
         _wireTaskComplete = true;
 
@@ -56,6 +63,8 @@ public class GameManager : Singleton<GameManager>
         if (_fillTaskComplete)
             return;
 
+        SoundManager.Instance.PlayTaskComplete();
+
         _fillTaskComplete = true;
 
         _fillTaskPanel.SetActive(false);
@@ -78,6 +87,8 @@ public class GameManager : Singleton<GameManager>
     {
         if (_valveTaskComplete)
             return;
+
+        SoundManager.Instance.PlayTaskComplete();
 
         _valveTaskComplete = true;
 

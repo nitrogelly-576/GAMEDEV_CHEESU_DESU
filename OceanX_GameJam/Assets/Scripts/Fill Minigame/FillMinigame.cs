@@ -66,6 +66,8 @@ public class FillMinigame : MonoBehaviour
                 Debug.Log("Meter filling");
                 _meterAmount += meterFill;
 
+                SoundManager.Instance.PlayOxygenFill();
+
                 if (_meterAmount >= meterMax)
                 {
                     _meterAmount = meterMax;
