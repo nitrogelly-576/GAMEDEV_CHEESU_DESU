@@ -138,6 +138,7 @@ public class GameManager : Singleton<GameManager>
 
     public bool IsTaskOpen()
     {
+        startTime = true;
         return _taskOpen;
     }
 }

@@ -5,8 +5,6 @@ public class ValveHandler : MonoBehaviour
 {
     [SerializeField] private ValveMinigame[] spinners;
 
-
-
     private void Update()
     {
         if (CheckAll())

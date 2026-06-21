@@ -827,7 +827,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9abf4809ca310574ba60a02a3b74476a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _taskPanel: {fileID: 1307400503}
+  _taskName: Fill
 --- !u!65 &252179772
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1705,7 +1705,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9abf4809ca310574ba60a02a3b74476a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _taskPanel: {fileID: 119540344}
+  _taskName: Wire
 --- !u!1 &664881140
 GameObject:
   m_ObjectHideFlags: 0
@@ -1808,7 +1808,7 @@ GameObject:
   - component: {fileID: 701044981}
   - component: {fileID: 701044980}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: TimerText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1853,7 +1853,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 00:00
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2071,7 +2071,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9abf4809ca310574ba60a02a3b74476a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _taskPanel: {fileID: 1684176106}
+  _taskName: Valve
 --- !u!65 &706013818
 BoxCollider:
   m_ObjectHideFlags: 0

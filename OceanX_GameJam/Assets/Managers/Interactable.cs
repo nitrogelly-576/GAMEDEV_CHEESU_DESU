@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 public class Interactable : MonoBehaviour
 {
-    [SerializeField] private GameObject _taskPanel;
+    [SerializeField] private string _taskName;
 
     private bool _playerNearby;
 
@@ -38,6 +38,19 @@ public class Interactable : MonoBehaviour
 
     public void Interact()
     {
-        _taskPanel.SetActive(true);
+        switch (_taskName)
+        {
+            case "Wire":
+                GameManager.Instance.OpenWireTask();
+                break;
+
+            case "Fill":
+                GameManager.Instance.OpenFillTask();
+                break;
+
+            case "Valve":
+                GameManager.Instance.OpenValveTask();
+                break;
+        }
     }
 }

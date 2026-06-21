@@ -29,13 +29,13 @@ public class ValveMinigame : Singleton<ValveMinigame>, IPointerClickHandler
 
             spinner.transform.Rotate(0,0,Time.deltaTime * speed);
 
-        }   
+        }
 
     }
 
     public void OnPointerClick(PointerEventData eventData) {
 
-        //Debug.Log("Item clicked");
+        Debug.Log("Item clicked");
 
         if(spinner.transform.eulerAngles.z > (back.transform.eulerAngles.z - hitBox) && spinner.transform.eulerAngles.z < (back.transform.eulerAngles.z + hitBox))
         {
