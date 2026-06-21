@@ -335,43 +335,44 @@ MonoBehaviour:
   - Character:
       CharacterName: ???
       Portrait: {fileID: 21300000, guid: 90457a036e141744ea4cb1ce6bdbbf6b, type: 3}
-      PortraitOffset: {x: -200, y: 200}
-      PortraitScale: 5
-    Text: "Who is this?! You\u2019re not supposed to be here!"
+      PortraitOffset: {x: -400, y: 200}
+      PortraitScale: 10
+    Text: "Who is this?! You\u2019re not supposed to be here!\n\n(Press Space to
+      Continue)"
   - Character:
       CharacterName: ???
       Portrait: {fileID: 21300000, guid: 90457a036e141744ea4cb1ce6bdbbf6b, type: 3}
-      PortraitOffset: {x: -200, y: 200}
-      PortraitScale: 5
+      PortraitOffset: {x: -400, y: 200}
+      PortraitScale: 10
     Text: "Wait\u2026"
   - Character:
       CharacterName: ???
       Portrait: {fileID: 21300000, guid: 90457a036e141744ea4cb1ce6bdbbf6b, type: 3}
-      PortraitOffset: {x: -200, y: 200}
-      PortraitScale: 5
+      PortraitOffset: {x: -400, y: 200}
+      PortraitScale: 10
     Text: "Right\u2026 you must be the new Captain Thomas had told me about. I believe
       I should introduce myself."
   - Character:
       CharacterName: Harold
       Portrait: {fileID: 21300000, guid: 90457a036e141744ea4cb1ce6bdbbf6b, type: 3}
-      PortraitOffset: {x: -200, y: 200}
-      PortraitScale: 5
+      PortraitOffset: {x: -400, y: 200}
+      PortraitScale: 10
     Text: "The name\u2019s Harold and from what Thomas told you about me, yes I\u2019m
-      the one who mostly maintains the Ocean Why ."
+      the one who mostly maintains the Ocean Y."
   - Character:
       CharacterName: Harold
       Portrait: {fileID: 21300000, guid: 90457a036e141744ea4cb1ce6bdbbf6b, type: 3}
-      PortraitOffset: {x: -200, y: 200}
-      PortraitScale: 5
+      PortraitOffset: {x: -400, y: 200}
+      PortraitScale: 10
     Text: "I\u2019ll be guiding you through one of tasks for the day since I got
       my hands tied at the moment working maintaining the vessel in another area."
   - Character:
       CharacterName: Harold
       Portrait: {fileID: 21300000, guid: 90457a036e141744ea4cb1ce6bdbbf6b, type: 3}
-      PortraitOffset: {x: -200, y: 200}
-      PortraitScale: 5
-    Text: "Notice the Reactor Core on the side of the Deck? Head over there, I will
-      show you how to work on it.\r"
+      PortraitOffset: {x: -400, y: 200}
+      PortraitScale: 10
+    Text: "Notice the Reactor Core on the beside of me? Head over there, I will show
+      you how to work on it.\r"
 --- !u!135 &30187186
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -780,6 +781,83 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 202852075}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &204107794
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 204107795}
+  - component: {fileID: 204107797}
+  - component: {fileID: 204107796}
+  m_Layer: 5
+  m_Name: DetailsPanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &204107795
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 204107794}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2058498184}
+  - {fileID: 701044979}
+  m_Father: {fileID: 1522601899}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -75}
+  m_SizeDelta: {x: 300, y: 150}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &204107796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 204107794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.78431374}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &204107797
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 204107794}
+  m_CullTransparentMesh: 1
 --- !u!1 &252179769
 GameObject:
   m_ObjectHideFlags: 0
@@ -973,6 +1051,139 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 305430234}
+  m_CullTransparentMesh: 1
+--- !u!1 &310222094
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 310222095}
+  - component: {fileID: 310222098}
+  - component: {fileID: 310222097}
+  - component: {fileID: 310222096}
+  m_Layer: 5
+  m_Name: ResetButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &310222095
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 310222094}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1136217559}
+  m_Father: {fileID: 1522601899}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 200.25, y: 100}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &310222096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 310222094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 310222097}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1260599107}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: BTN_Reset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &310222097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 310222094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &310222098
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 310222094}
   m_CullTransparentMesh: 1
 --- !u!1 &315263231
 GameObject:
@@ -1821,16 +2032,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 701044978}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1522601899}
+  m_Father: {fileID: 204107795}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -225}
   m_SizeDelta: {x: 200, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &701044980
@@ -2788,6 +2999,140 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1082098685}
   m_CullTransparentMesh: 1
+--- !u!1 &1136217558
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1136217559}
+  - component: {fileID: 1136217561}
+  - component: {fileID: 1136217560}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1136217559
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136217558}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 310222095}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1136217560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136217558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Reset
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 32
+  m_fontSizeBase: 32
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1136217561
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136217558}
+  m_CullTransparentMesh: 1
 --- !u!1 &1175550809
 GameObject:
   m_ObjectHideFlags: 0
@@ -2999,6 +3344,8 @@ MonoBehaviour:
   _valveTaskComplete: 0
   timer: {fileID: 701044980}
   timeCount: 120
+  _scoreText: {fileID: 2058498185}
+  _score: 0
   startTime: 0
 --- !u!4 &1260599108
 Transform:
@@ -3401,59 +3748,59 @@ MonoBehaviour:
   - Character:
       CharacterName: ???
       Portrait: {fileID: 21300000, guid: 2857a1a9d263fd148bd437f63cdd3e9e, type: 3}
-      PortraitOffset: {x: -200, y: 200}
-      PortraitScale: 10
+      PortraitOffset: {x: -400, y: 200}
+      PortraitScale: 17
     Text: "Oh, you\u2019ve finally arrived! Welcome aboard the Ocean Y, you must
       be the new Captain around here! \n\n(Press Space to continue)\r"
   - Character:
       CharacterName: Thomas
       Portrait: {fileID: 21300000, guid: 2857a1a9d263fd148bd437f63cdd3e9e, type: 3}
-      PortraitOffset: {x: -200, y: 200}
-      PortraitScale: 10
+      PortraitOffset: {x: -400, y: 200}
+      PortraitScale: 17
     Text: "This is Thomas speaking, I\u2019ll be your guide through the day.\r\n"
   - Character:
       CharacterName: Thomas
       Portrait: {fileID: 21300000, guid: 2857a1a9d263fd148bd437f63cdd3e9e, type: 3}
-      PortraitOffset: {x: -200, y: 200}
-      PortraitScale: 10
+      PortraitOffset: {x: -400, y: 200}
+      PortraitScale: 17
     Text: I specialize in assisting the other two members in this vessel so I do
       know a thing or two about how things work around here.
   - Character:
       CharacterName: Thomas
       Portrait: {fileID: 21300000, guid: 2857a1a9d263fd148bd437f63cdd3e9e, type: 3}
-      PortraitOffset: {x: -200, y: 200}
-      PortraitScale: 10
+      PortraitOffset: {x: -400, y: 200}
+      PortraitScale: 17
     Text: "For today, I will guide you on how to work with the electrical wires.\r"
   - Character:
       CharacterName: Thomas
       Portrait: {fileID: 21300000, guid: 2857a1a9d263fd148bd437f63cdd3e9e, type: 3}
-      PortraitOffset: {x: -200, y: 200}
-      PortraitScale: 10
+      PortraitOffset: {x: -400, y: 200}
+      PortraitScale: 17
     Text: "While our Engineer Harold does a great work keeping this vessel afloat,
       he sometimes makes mistakes from rushing through maintenance.\r"
   - Character:
       CharacterName: Thomas
       Portrait: {fileID: 21300000, guid: 2857a1a9d263fd148bd437f63cdd3e9e, type: 3}
-      PortraitOffset: {x: -200, y: 200}
-      PortraitScale: 10
+      PortraitOffset: {x: -400, y: 200}
+      PortraitScale: 17
     Text: "The Electrical Breaker\u2026 Well, breaks! "
   - Character:
       CharacterName: Thomas
       Portrait: {fileID: 21300000, guid: 2857a1a9d263fd148bd437f63cdd3e9e, type: 3}
-      PortraitOffset: {x: -200, y: 200}
-      PortraitScale: 10
+      PortraitOffset: {x: -400, y: 200}
+      PortraitScale: 17
     Text: "The task should be simple.\r"
   - Character:
       CharacterName: Thomas
       Portrait: {fileID: 21300000, guid: 2857a1a9d263fd148bd437f63cdd3e9e, type: 3}
-      PortraitOffset: {x: -200, y: 200}
-      PortraitScale: 10
+      PortraitOffset: {x: -400, y: 200}
+      PortraitScale: 17
     Text: "Drag the wires correctly by looking for the correct colors on both ends.\r"
   - Character:
       CharacterName: Thomas
       Portrait: {fileID: 21300000, guid: 2857a1a9d263fd148bd437f63cdd3e9e, type: 3}
-      PortraitOffset: {x: -200, y: 200}
-      PortraitScale: 10
+      PortraitOffset: {x: -400, y: 200}
+      PortraitScale: 17
     Text: "Go to the Machine above me and give it a try.\r\r"
 --- !u!135 &1421031222
 SphereCollider:
@@ -3612,7 +3959,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0.4862745, g: 0.4862745, b: 0.4862745, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3673,57 +4020,60 @@ MonoBehaviour:
       CharacterName: ???
       Portrait: {fileID: 21300000, guid: c434818d4eae24749855d034a4bbeddb, type: 3}
       PortraitOffset: {x: -400, y: 0}
-      PortraitScale: 10
-    Text: 'Ah, you must be the captain of the research vessel, Ocean Why. '
+      PortraitScale: 15
+    Text: 'Ah, you must be the captain of the research vessel, Ocean Y.
+
+
+      (Press
+      Space to Continue)'
   - Character:
       CharacterName: Thamsin
       Portrait: {fileID: 21300000, guid: c434818d4eae24749855d034a4bbeddb, type: 3}
       PortraitOffset: {x: -400, y: 0}
-      PortraitScale: 10
+      PortraitScale: 15
     Text: "I\u2019m Thamsin, the researcher whom you\u2019ll be assisting for the
       day."
   - Character:
       CharacterName: Thamsin
       Portrait: {fileID: 21300000, guid: c434818d4eae24749855d034a4bbeddb, type: 3}
       PortraitOffset: {x: -400, y: 0}
-      PortraitScale: 10
+      PortraitScale: 15
     Text: "I see that you\u2019re familiar with two of your compatriots, so I won\u2019t
       bother you with their introductions.  "
   - Character:
       CharacterName: Thamsin
       Portrait: {fileID: 21300000, guid: c434818d4eae24749855d034a4bbeddb, type: 3}
       PortraitOffset: {x: -400, y: 0}
-      PortraitScale: 10
+      PortraitScale: 15
     Text: "Anyways, we\u2019re near an area of interest where a new specimen is reportedly
       sighted."
   - Character:
       CharacterName: Thamsin
       Portrait: {fileID: 21300000, guid: c434818d4eae24749855d034a4bbeddb, type: 3}
       PortraitOffset: {x: -400, y: 0}
-      PortraitScale: 10
+      PortraitScale: 15
     Text: "However, there are issues with the oxygen canisters. They\u2019ve appeared
       to be empty at the moment. "
   - Character:
       CharacterName: Thamsin
       Portrait: {fileID: 21300000, guid: c434818d4eae24749855d034a4bbeddb, type: 3}
       PortraitOffset: {x: -400, y: 0}
-      PortraitScale: 10
+      PortraitScale: 15
     Text: "So you\u2019ll be filling them. Don\u2019t worry, I\u2019ll guide you
       through the process."
   - Character:
       CharacterName: Thamsin
       Portrait: {fileID: 21300000, guid: c434818d4eae24749855d034a4bbeddb, type: 3}
       PortraitOffset: {x: -400, y: 0}
-      PortraitScale: 10
+      PortraitScale: 15
     Text: "Also, I have been receiving reports of a specific electrical breaker not
       functioning and the reactor being unstable.\r"
   - Character:
       CharacterName: Thamsin
       Portrait: {fileID: 21300000, guid: c434818d4eae24749855d034a4bbeddb, type: 3}
       PortraitOffset: {x: -400, y: 0}
-      PortraitScale: 10
-    Text: "Please quickly address those two issues before we proceed to the vessel's
-      reactor.\r\r"
+      PortraitScale: 15
+    Text: "Please quickly address that with the Machine beside me.\r\r"
 --- !u!135 &1476954645
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3778,7 +4128,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1501846969
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3814,7 +4164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.78431374}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3933,7 +4283,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 701044979}
+  - {fileID: 310222095}
+  - {fileID: 204107795}
   - {fileID: 119540345}
   - {fileID: 1307400504}
   - {fileID: 1684176107}
@@ -4648,22 +4999,49 @@ MonoBehaviour:
       CharacterName: ???
       Portrait: {fileID: 0}
       PortraitOffset: {x: 0, y: 0}
-      PortraitScale: 1
-    Text: "Oh, you\u2019ve finally arrived! Welcome aboard the Nam\u2019Eh\u2019Ere,
-      you must be the new Captain around here! "
+      PortraitScale: 0
+    Text: 'Greetings Captain!
+
+
+      (Press Space to Continue)'
   - Character:
-      CharacterName: Thomas
-      Portrait: {fileID: 21300000, guid: 2857a1a9d263fd148bd437f63cdd3e9e, type: 3}
-      PortraitOffset: {x: -200, y: 200}
-      PortraitScale: 10
-    Text: "This is Thomas speaking, I\u2019ll be your guide through the day. "
+      CharacterName: ???
+      Portrait: {fileID: 0}
+      PortraitOffset: {x: 0, y: 0}
+      PortraitScale: 0
+    Text: I will brief you shortly on the role you're placed into.
   - Character:
-      CharacterName: Thomas
-      Portrait: {fileID: 21300000, guid: 2857a1a9d263fd148bd437f63cdd3e9e, type: 3}
-      PortraitOffset: {x: -200, y: 200}
-      PortraitScale: 10
-    Text: 'I specialize in assisting the other two members in this vessel so I do
-      know a thing or two about how things work around here. '
+      CharacterName: ???
+      Portrait: {fileID: 0}
+      PortraitOffset: {x: 0, y: 0}
+      PortraitScale: 0
+    Text: You are the Captain of the Ocean Y, a submarine vessel near the bottom
+      of the sea.
+  - Character:
+      CharacterName: ???
+      Portrait: {fileID: 0}
+      PortraitOffset: {x: 0, y: 0}
+      PortraitScale: 0
+    Text: Your goal is to maintain this vessel by going towards these blue Machines
+      around the deck.
+  - Character:
+      CharacterName: ???
+      Portrait: {fileID: 0}
+      PortraitOffset: {x: 0, y: 0}
+      PortraitScale: 0
+    Text: You may use [ WASD ] to move, and [ E ] or [ Space ] to interact with the
+      environment or even your crew.
+  - Character:
+      CharacterName: ???
+      Portrait: {fileID: 0}
+      PortraitOffset: {x: 0, y: 0}
+      PortraitScale: 0
+    Text: 'If you wish to reset or read this again. You may press the [Reset button]
+      on the bottom left of the screen.
+
+
+      Thank you and enjoy! (Press Space
+      to Close)'
 --- !u!114 &1737419914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5309,6 +5687,140 @@ Transform:
   - {fileID: 202852076}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2058498183
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2058498184}
+  - component: {fileID: 2058498186}
+  - component: {fileID: 2058498185}
+  m_Layer: 5
+  m_Name: ScoreText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2058498184
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058498183}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 204107795}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -275}
+  m_SizeDelta: {x: 200, y: 450}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2058498185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058498183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &2058498186
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058498183}
+  m_CullTransparentMesh: 1
 --- !u!1 &2075899659
 GameObject:
   m_ObjectHideFlags: 0

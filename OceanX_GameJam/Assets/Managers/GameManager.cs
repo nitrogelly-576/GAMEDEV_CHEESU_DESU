@@ -1,7 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.SocialPlatforms.Impl;
+using UnityEngine.UI;
 
 public class GameManager : Singleton<GameManager>
 {
@@ -17,9 +20,13 @@ public class GameManager : Singleton<GameManager>
 
     private bool _taskOpen;
 
-
+    [Header("Timer & Scoring")]
     [SerializeField] public TMP_Text timer;
     [SerializeField] public float timeCount;
+
+    [SerializeField] public TMP_Text _scoreText;
+    [SerializeField] private float _score;
+
     public bool startTime;
 
     private void Start()
@@ -28,28 +35,33 @@ public class GameManager : Singleton<GameManager>
         startTime = false;
     }
 
-
     private void countDown()
     {
-
         timeCount -= Time.deltaTime;
         int minutes = Mathf.FloorToInt(timeCount / 60);
         int seconds = Mathf.FloorToInt(timeCount % 60);
 
         timer.text = string.Format("{0:00}:{1:00}", minutes, seconds);
-
     }
 
     void Update()
     {
-
         if(startTime)
         {
-
             countDown();
-
         }
+        if ((_wireTaskComplete == true) || 
+            (_fillTaskComplete == true) || 
+            (_valveTaskComplete == true))
+        {
+            _wireTaskComplete = false;
+            _fillTaskComplete = false;
+            _valveTaskComplete = false;
 
+            _score +=  100;
+
+            _scoreText.text = string.Format("Score: ", _score);
+        }
     }
 
     public void OpenWireTask()
@@ -140,5 +152,10 @@ public class GameManager : Singleton<GameManager>
     {
         startTime = true;
         return _taskOpen;
+    }
+
+    public void BTN_Reset()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
